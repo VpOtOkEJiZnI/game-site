@@ -26,6 +26,17 @@ body {
     .btn-purple{
         display: block;
     }
+    .dota-box, .fortnite-box, .gta-box {
+        height: 100%;
+        background-image: none;
+    }
+    .img-mobile {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .img-mobile img {
+        width: 450px;
+    }
 
 }
 
@@ -138,6 +149,9 @@ body {
     .footer-link:nth-child(2) {
         margin: 0;
     }
+    .img-mobile img {
+        width: 350px;
+    }
 }
 
 .logo {
@@ -156,6 +170,64 @@ body {
     100% {transform: rotate(360deg);}
     
 }
+
+.dota-box {
+    height: calc(100vh - 112px);
+    background-image: url("./img/pic/dota-big.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+}
+
+.gta-box {
+    height: calc(100vh - 112px);
+    background-image: url("./img/pic/gta-big.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+}
+
+.fortnite-box {
+    height: calc(100vh - 112px);
+    background-image: url("./img/pic/fortnite-big.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+}
+
+.img-mobile {
+    display: none;
+}
+
+.gallery , .article {
+    background-color: #f1efe4;
+}
+
+.swiper {
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    background: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide {
+    width: 80%;
+}
+
 
 
 
